@@ -1,7 +1,7 @@
 # Base: Node 20 (Debian Bookworm)
 FROM node:20-bookworm-slim
 
-# ─── Dependencias del sistema (incluyendo libicu para .NET) ───────────────
+# ─── Dependencias del sistema ─────────────────────────────────────────────
 RUN apt-get update && apt-get install -y \
     wget \
     ca-certificates \
@@ -9,6 +9,7 @@ RUN apt-get update && apt-get install -y \
     python3-pip \
     libicu72 \
     libssl3 \
+    lua5.1 \
     && rm -rf /var/lib/apt/lists/*
 
 # ─── Instalar .NET 9 SDK ──────────────────────────────────────────────────
@@ -25,9 +26,7 @@ COPY . .
 
 RUN npm install
 
-# Buildear apuntando al .csproj directamente
 RUN dotnet build MoonsecDeobfuscator-master/MoonsecDeobfuscator.csproj -c Release
 
 # ─── Start ────────────────────────────────────────────────────────────────
 CMD ["node", "index.js"]
-
