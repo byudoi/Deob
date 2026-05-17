@@ -98,7 +98,7 @@ print(out)
 
     try:
         process = subprocess.run(
-            ["lua_bin/lua5.1.exe", temp_path],
+            ["lua5.1", temp_path],
             stdout=subprocess.PIPE,
             stderr=subprocess.PIPE,
             timeout=20,
@@ -671,7 +671,7 @@ safe_globals["shared"] = MockEnv
 
     print(f"Executing deobfuscation for {filepath}...")
 
-    process = subprocess.Popen(["lua_bin/lua5.1.exe", temp_file, "1"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+    process = subprocess.Popen(["lua5.1", temp_file, "1"], stdout=subprocess.PIPE, stderr=subprocess.PIPE)
 
     stdout_lines = []
     
