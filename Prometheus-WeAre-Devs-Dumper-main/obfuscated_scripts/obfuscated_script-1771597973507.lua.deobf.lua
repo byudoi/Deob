@@ -1,0 +1,9 @@
+-- Deobfuscated via Trace Emulation
+
+-- === String Constants ===
+local Constants = { [1] = "unpack", [2] = "l2", [3] = "p�DX", [4] = "len", [5] = "__gc", [6] = "/�v]u��Jl�]O�", [7] = "rGNNgal0kPWS", [8] = "�|", [9] = "nsJiYCQApReKT9", [10] = "01ʬ��", [11] = "�+-f", [12] = "tostring", [13] = "FindFirstChild", [14] = "e��C2��T", [15] = "c��~Ɋ", [16] = "floor", [17] = "l1", [18] = "S�", [19] = "pcall", [20] = "�5!", [21] = "spawn", [22] = "Destroy", [23] = "error", [24] = "�xl��", [25] = "al", [26] = "tonumber", [27] = "dI4fgClPWdoj", [28] = "2rrkU90O", [29] = "LwNstJ6cRWtKUm", [30] = "�#��W�n�", [31] = "GetMouse", [32] = "__metatable", [33] = "PMdOiC0Zxtltne", [34] = "LM50aXc9EsmOlJ", [35] = "lower", [36] = "__index", [37] = "#", [38] = "ʸ0u0���0�", [39] = "p0TX1j4JKwJ2y", [40] = "[{��~�}", [41] = "Κ�X�B�", [42] = "AsEDuRXSGO0H", [43] = "Instance", [44] = "��|��", [45] = "setmetatable", [46] = "concat", [47] = "gsub", [48] = "as4tmiMLKj6MI", [49] = ":(%d*):", [50] = "random", [51] = "��", [52] = "char", [53] = "string", [54] = "game", [55] = "Connect", [56] = "task", [57] = "hY0iPenuwnGBA", [58] = "workspace", [59] = "9NzgjxV9rS4eCF", [60] = "Tamper Detected!", [61] = "3TRTnUjw5woYa", [62] = "�hGLC", [63] = "table", [64] = "\000��", [65] = "i07OrFyR3RFbk", [66] = "qQsr7R6M6KKsV", [67] = "NLMWyijmSU6AF", [68] = "remove", [69] = "", [70] = "��Ԑ�]{���|��C", [71] = "byte", [72] = "__len", [73] = "Ez9G9agpF1hi", [74] = ":", [75] = "Vector3", [76] = "gmatch", [77] = "8bԓ:�ܢM.�", [78] = "math", [79] = "��n�(?Fh�~", [80] = "pTNd7fQ", [81] = "nghkW3Om", }
+
+local mouse = game.Players.LocalPlayer:GetMouse()
+mouse.KeyDown:Connect(function(...)
+    local lower = arg1:lower()
+end)
