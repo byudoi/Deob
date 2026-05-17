@@ -30,3 +30,4 @@ RUN dotnet build MoonsecDeobfuscator-master/MoonsecDeobfuscator.csproj -c Releas
 
 # ─── Start ────────────────────────────────────────────────────────────────
 CMD ["node", "index.js"]
+
