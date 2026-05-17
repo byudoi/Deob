@@ -76,7 +76,7 @@ function embed(color, title, desc) {
 
 // ─── COMMAND HANDLERS ──────────────────────────────────────────────────────
 
-// .l moonsec [attach .lua]     → devirtualize MoonSec V3
+// .l moonsec [attach .lua]     → disassembly MoonSec V3
 // .l moonsdis [attach .lua]    → disassembly MoonSec V3
 // .l prom [attach .lua]        → Prometheus/WeAreDevs deobfuscator
 // .l help                      → show all commands
@@ -222,7 +222,7 @@ client.on("messageCreate", async (msg) => {
   const sub = args[0]?.toLowerCase();
 
   try {
-    if (sub === "moonsec") return await handleMoonsec(msg, "-dev");
+    if (sub === "moonsec") return await handleMoonsec(msg, "-dis");
     if (sub === "moonsdis") return await handleMoonsec(msg, "-dis");
     if (sub === "prom") return await handlePrometheus(msg);
     if (sub === "help" || !sub) return await sendHelp(msg);
@@ -241,3 +241,4 @@ client.once("ready", () => {
 });
 
 client.login(TOKEN);
+   
