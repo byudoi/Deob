@@ -1,0 +1,11 @@
+[phases.setup]
+nixPkgs = ["dotnet-sdk_9", "python3", "nodejs_20"]
+
+[phases.build]
+cmds = [
+  "npm install",
+  "dotnet build MoonsecDeobfuscator-master -c Release"
+]
+
+[start]
+cmd = "node index.js"

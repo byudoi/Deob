@@ -1,0 +1,16 @@
+{
+  "name": "lua-deobf-bot",
+  "version": "1.0.0",
+  "description": "Discord bot para deobfuscar scripts Lua/Roblox (MoonSec V3 + Prometheus/WeAreDevs)",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "build": "dotnet build MoonsecDeobfuscator-master -c Release"
+  },
+  "dependencies": {
+    "discord.js": "^14.15.3"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}
