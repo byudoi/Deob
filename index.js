@@ -236,7 +236,7 @@ client.on("messageCreate", async (msg) => {
 
 // ─── READY ─────────────────────────────────────────────────────────────────
 client.once("ready", () => {
-  console.log(`✅ Bot listo como ${client.user.tag}`);
+  console.log(`✅  Bot listo como ${client.user.tag}`);
   client.user.setActivity(".l help", { type: 3 }); // WATCHING
 });
 
